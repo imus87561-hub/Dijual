@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kejutan 😎</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #111, #333);
+            color: white;
+        }
+
+        .box {
+            padding: 25px;
+        }
+
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+        }
+
+        #hasil {
+            display: none;
+        }
+
+        #hasil img {
+            width: 280px;
+            max-width: 90%;
+            border-radius: 20px;
+            margin-top: 15px;
+            box-shadow: 0 0 25px rgba(255,255,255,0.4);
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="awal">
+        <h1>🎁 Coba buka</h1>
+        <p>Klik tombolnya dulu 👇</p>
+
+        <button onclick="bukaPrank()">
+            BUKA 😎
+        </button>
+    </div>
+
+    <div class="box" id="hasil">
+        <h1>Dijual Musang plus kandang!</h1>
+
+        <img src="foto.jpg" alt="Foto prank">
+
+        <p>Syududu</p>
+    </div>
+
+    <script>
+        function bukaPrank() {
+            document.getElementById("awal").style.display = "none";
+            document.getElementById("hasil").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
